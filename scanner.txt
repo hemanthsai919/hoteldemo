@@ -1,0 +1,60 @@
+package com.cg.demo;
+import java.util.Scanner;
+public class LaB14 {
+    static boolean checkNumber(int n) {
+    	if (n==0)
+    		return false;
+    	while (n!=1)
+    	{
+    		if (n%2 != 0)
+    			return false;
+    		n = n/2;
+    	}
+    	return true;
+    }
+    public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+	    sc.close();
+		System.out.println("Please Enter a integer");
+		int num = sc.nextInt();
+		if (checkNumber(num))
+			System.out.println("True");
+		else
+			System.out.println("true");
+	}
+    
+    
+}
+
+
+//package com.cg.demo.lab;
+////Power of two
+//import java.util.Scanner;
+//public class Exercise8Lab1 {
+//
+//
+//
+//  static boolean checkNumber(int n) {
+//      while(n % 2==0) {//number even or not
+//          n=n/2;//4,2,1
+//              }
+//      if(n==1) {
+//          return true;
+//      }
+//      else {
+//          return false;
+//      }
+//  }
+//  public static void main(String[] args) {
+//      
+//      Scanner sc = new Scanner(System.in);
+//      System.out.println("Enter the number ");
+//      int n = sc.nextInt();    
+//      
+//      if (checkNumber(n))
+//          System.out.println(n + " is a power of 2");
+//      else
+//          System.out.println(n + " isnot a power of 2");
+//      
+//  }
+//}
